@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>To-Do List Project in JavaScript</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">
+  <h2 style="text-align: center;background-color: yellow;">To-Do List</h2>
+
+  <div class="col-sm-12" style="padding-top:10px;border: 1px solid gray;background-color: azure;">
+    <form action="#">
+      <div class="form-group">
+        <input type="text" style="width: 900px;display: inline;" class="form-control" id="task_name"
+               placeholder="Enter Task Name" name="task_name">
+        <button type="button" style="width: 80px;display: inline;" onclick="saveData()"
+                class="btn btn-success">Submit</button>
+        <button type="button" style="width: 80px;display: inline;" onclick="clearData()"
+                class="btn btn-danger">ClearAll</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="col-sm-12" style="margin-top:10px;border: 1px solid gray;">
+    <div id="showUsers"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
